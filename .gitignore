@@ -84,6 +84,7 @@ public/uploads/*
 !public/uploads/.gitkeep
 .vscode
 
+
 ############################
 # Node.js
 ############################
