@@ -9,7 +9,9 @@ You'll need to create a `.env` file.  When working locally, the only env key's I
 
 Biggest thing to pay attention to with the strapi file structure is the `/config` folder. 
 
-First you'll notice that there is a `/env ` folder within the `/config` folder.  This `env` folder is **only used in production**. There is a var config on heroku currently setup, so that when heroku is building our strapi app, it notices that var config and knows to go within the `/env/` folder to reference both the `database.js` and `server.js` files. When you're building the app locally on your machine, it does not do this -- it basically ignores the `/env` folder and references a different set of config files.
+First you'll notice that there is a `/env ` folder within the `/config` folder.  This `env` folder is **only used in production**. There is a var config on heroku currently setup, so that when heroku is building our strapi app, it notices that var config and knows to go within the `/env/` folder to reference both the `database.js` and `server.js` files. 
+
+When you're building the app **locally on your machine**, it does not do this -- it ignores the `/env` folder and references the config files that are not within the env folder. 
 
 I go into further detail below -- but notice that within the `database.js` file the database name and password are determined here. So when creating a database locally, you'll need to follow this convention.
 
