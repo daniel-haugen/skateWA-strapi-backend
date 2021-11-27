@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/skateparks",
+      "handler": "skateparks.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skateparks/count",
+      "handler": "skateparks.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skateparks/:id",
+      "handler": "skateparks.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/skateparks",
+      "handler": "skateparks.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/skateparks/:id",
+      "handler": "skateparks.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/skateparks/:id",
+      "handler": "skateparks.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
