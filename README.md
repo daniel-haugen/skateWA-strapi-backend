@@ -5,7 +5,7 @@ Booyah -- Washington skateparks / CMS power
 
 ## File Structure
 
-You'll need to create a `.env` file.  When working locally, the only env key's I'm using are for cloudinary. I'm running postgres locally on my computer rn -- that's likely going to change soon so that we can connect to the hosted database on heroku in development mode. 
+When working locally, the only env key's I'm using are for cloudinary (which are not necessary -- you can add photos in the production build). I'm running postgres locally on my computer rn -- that's likely going to change soon so that we can connect to the hosted database on heroku in development mode. 
 
 Biggest thing to pay attention to with the strapi file structure is the `/config` folder. 
 
