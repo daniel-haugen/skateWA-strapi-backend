@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skateparks",
+  "info": {
+    "name": "skateparks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "skateparkName": {
+      "type": "string"
+    }
+  }
+}
