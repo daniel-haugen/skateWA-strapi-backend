@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "skateparks",
   "info": {
-    "name": "skateparks"
+    "name": "skateparks",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,37 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "skateparkName": {
+    "name": {
+      "type": "string"
+    },
+    "street_address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "full_address": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lon": {
+      "type": "float"
+    },
+    "native_land": {
+      "type": "string"
+    },
+    "rain_cover": {
+      "type": "boolean"
+    },
+    "night_light": {
+      "type": "boolean"
+    },
+    "zip": {
       "type": "string"
     }
   }
