@@ -68,6 +68,13 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "slug": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "slug"
     }
   }
 }

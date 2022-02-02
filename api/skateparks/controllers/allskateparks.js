@@ -13,7 +13,8 @@ module.exports = {
         'name': index.name,
         'address': index.full_address,
         'city': index.city,
-        'native_land': index.native_land
+        'native_land': index.native_land,
+        'slug': index.id
       }); 
     });
     ctx.send(newAnswer);
