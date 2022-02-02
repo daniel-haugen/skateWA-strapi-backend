@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/allskateparksdingdong",
+      "handler": "allskateparks.dingdong",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/skateparks/count",
       "handler": "skateparks.count",
       "config": {
