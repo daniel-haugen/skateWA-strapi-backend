@@ -14,7 +14,7 @@ module.exports = {
         'address': index.full_address,
         'city': index.city,
         'native_land': index.native_land,
-        'slug': index.id
+        'slug': index.slug
       }); 
     });
     ctx.send(newAnswer);
