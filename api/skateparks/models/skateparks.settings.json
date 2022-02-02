@@ -24,6 +24,9 @@
     "state": {
       "type": "string"
     },
+    "zip": {
+      "type": "string"
+    },
     "full_address": {
       "type": "string"
     },
@@ -42,8 +45,29 @@
     "night_light": {
       "type": "boolean"
     },
-    "zip": {
-      "type": "string"
+    "main": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
