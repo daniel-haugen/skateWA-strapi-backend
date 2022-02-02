@@ -8,10 +8,12 @@ module.exports = {
    */
 
   async findOne(ctx) {
-    const { id } = ctx.params;
+    const lookup = ctx.request.url;
+    const slug = lookup.replace('/skateparks/','');
 
-    const entity = await strapi.services.skateparks.findOne({ id });
+    const entity = await strapi.services.skateparks.findOne({ slug });
     return sanitizeEntity(entity, { model: strapi.models.skateparks });
   },
 };
 
+ 
