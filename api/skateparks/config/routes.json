@@ -10,8 +10,8 @@
     },
     {
       "method": "GET",
-      "path": "/allskateparksdingdong",
-      "handler": "allskateparksdingdong.dingdong",
+      "path": "/sp-min",
+      "handler": "sp-min.dingdong",
       "config": {
         "policies": []
       }
