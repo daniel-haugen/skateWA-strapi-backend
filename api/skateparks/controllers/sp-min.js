@@ -14,7 +14,8 @@ module.exports = {
         'address': index.full_address,
         'city': index.city,
         'native_land': index.native_land,
-        'slug': index.slug
+        'slug': index.slug,
+        'rain_cover': index.rain_cover
       }); 
     });
 
@@ -33,8 +34,6 @@ module.exports = {
     newAnswer.sort(compare);
 
     ctx.send(newAnswer);
-
-
 
   },
 
